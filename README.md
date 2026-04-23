@@ -33,24 +33,17 @@ project/
 
 ## ⚙️ Setup — Backend
 
-### 1. Install PostgreSQL and create the database
 
-```bash
-psql -U postgres
-```
-```sql
-\i src/config/schema.sql   -- creates DB, tables, indexes, triggers
-```
 
-### 2. Configure environment
+### 1. Configure environment
 
 ```bash
 cd backend
-cp .env.example .env
+cp .env
 # Edit .env — fill in DB credentials and a strong JWT_SECRET
 ```
 
-### 3. Install dependencies & run
+### 2. Install dependencies & run
 
 ```bash
 npm install
